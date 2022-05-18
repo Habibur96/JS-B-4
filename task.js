@@ -105,7 +105,7 @@ const mark = {
 const { physics, oop, spl, math } = mark;
 console.log(physics, oop, spl, math);
 
-//Task-11
+//Task-11(Uncomplete)
 
 const [first, second, third, forth, fifth] = ['Noyon', 'Jahid', 'Nahid', 'Abir', 'Mahi'];
 
@@ -123,13 +123,13 @@ const student = {
     department: 'CSE',
     batch: '18',
 
-    teacher: info = {
+    teacher: {
         name: 'KPG',
         department: 'CSE',
         age: '35',
         position: 'headOfTheDepartment',
 
-        otherInfo: optionalInfo = {
+        otherInfo: {
             presantAddress: 'Dhaka',
             parmanentAddress: 'Khulna',
             educationQualification: 'phd holder',
@@ -139,4 +139,11 @@ const student = {
 
     teachersId: [101, 102, 520, 478, 001, 025]
 }
+
+//Using optional chaining
+console.log(student.teacher.name.income?.year);
+//without optional chaining
+console.log(student.bio)
+//Using optional chaining
+console.log(student?.bio)
 
